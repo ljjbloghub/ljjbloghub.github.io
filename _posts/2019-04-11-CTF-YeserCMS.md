@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 pubulish: true
 tag: ctf
 layout: post
@@ -33,8 +33,9 @@ CMS发现：
 ![](https://ljjbloghub.github.io/img/yesercms5.png)
 4查看用户名密码    
 ![](https://ljjbloghub.github.io/img/yesercms6.png)
-获得密码的md5值  
+获得密码的md5值，解密md5得到密码是Yeser231：  
 ![](https://ljjbloghub.github.io/img/yesercms7.png)
+
 5.查看robots文件，发现后台登录页面/admin,登录后台，找到模版编辑获取页面文件，试着修改这些模板文件，但是发现修改后无法保存修改。但是，看这个界面，我们应该可以猜到后台是直接读取了这些文件，那么我们通过修改request里的参数通过路径遍历就可以直接读取falg.php里的信息了。 
 ![](https://ljjbloghub.github.io/img/yesercms8.png)
 
